@@ -1,0 +1,10 @@
+{% include 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>Two Factor Authentication Setup</h1>
+        <p>You are almost done! Please start Authy on your smartphone and scan the following QR Code with it:</p>
+        <p><img id="qrcode" src="{% url 'auth:qrcode' %}"></p>
+        <p>I'm done, take me to the <a href="{% url 'auth:login' %}">Login</a> page!</p>
+    </div>
+{% endblock content %}

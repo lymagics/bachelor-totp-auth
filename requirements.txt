@@ -1,0 +1,8 @@
+Django==5.0.2
+environs[django]==10.3.0
+djangorestframework==3.14.0
+factory-boy==3.3.0
+psycopg2-binary==2.9.9
+pyotp==2.9.0
+crispy-bootstrap5==2023.10
+PyQRCode==1.2.1

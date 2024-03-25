@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bachelor TOTP</a>
+      {% if user.is_authenticated %}
+        <a class="link-dark" href="{% url 'auth:logout' %}">Logout</a>
+      {% else %}
+        <a class="link-dark" href="{% url 'auth:login' %}">Login</a>
+      {% endif %}
+    </div>
+  </nav>
